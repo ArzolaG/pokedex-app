@@ -13,7 +13,8 @@ const PokemonCard = ({ pokemon }) => {
 	const getPokemonSpecies = async (pokeURL) => {
 		const response = await fetch(pokeURL);
 		const data = await response.json();
-		setPokemonDescription(data.flavor_text_entries[6].flavor_text);
+		console.log(data);
+		setPokemonDescription(data.flavor_text_entries[5].flavor_text);
 	};
 
 	const description = pokemonDescription
