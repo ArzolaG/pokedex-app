@@ -52,3 +52,36 @@ $white: #fff;
 	justify-content: space-between;
 	gap: 20px;
 }
+
+
+@media screen and (max-width:1600px) {
+	.main-container{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width:900px){
+	.main-container{
+		width: 95%;
+		gap: 20px;
+	}
+	.list-container{
+		min-width: max-content;
+	}
+	.list-container div{
+		padding: 10px;
+	}
+	.list-container div p{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width:660px){
+	.main-container{
+		overflow-x: scroll;
+		gap: 10px;
+	}
+	.main_title{
+		font-size: 24px;
+	}
+	
+}

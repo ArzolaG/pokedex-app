@@ -13,7 +13,6 @@ const PokemonCard = ({ pokemon }) => {
 	const getPokemonSpecies = async (pokeURL) => {
 		const response = await fetch(pokeURL);
 		const data = await response.json();
-		console.log(data);
 		setPokemonDescription(data.flavor_text_entries[5].flavor_text);
 	};
 
@@ -65,11 +64,8 @@ const PokemonCard = ({ pokemon }) => {
 			<div className="box_container">
 				<div className="stats_container">
 					{/* STATS */}
-					{stats.map((stat) => {
+					{stats.map((stat, key) => {
 						const { base_stat, stat: statInfo } = stat;
-
-						console.log(base_stat);
-						console.log(statInfo.name);
 
 						const fullStat = 255;
 						const statPercentage = (base_stat * 100) / fullStat;
@@ -98,7 +94,7 @@ const PokemonCard = ({ pokemon }) => {
 						}
 
 						return (
-							<div className="stat">
+							<div className="stat" key={key}>
 								<div className="name">{statInfo.name}</div>
 								<div>{base_stat}</div>
 								<div style={{ width: statPercentage + "%" }} className={`stat_bar bar_${color}`}></div>

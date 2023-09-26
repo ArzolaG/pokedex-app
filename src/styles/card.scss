@@ -200,3 +200,24 @@
 .type_water {
 	background: #3495f7;
 }
+
+
+@media screen and (max-width:1200px){
+	.box_container{
+		grid-template-columns: 1fr;
+		gap: 50px;
+	}
+}
+
+@media screen and (max-width:900px){
+	.card_container{
+		padding: 20px;
+	}
+	.flex_container{
+		flex-direction: column-reverse;
+	}
+	.description{
+		min-width: 300px;
+	}
+
+}
