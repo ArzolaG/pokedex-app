@@ -1,7 +1,8 @@
 .card_container {
 	display: flex;
+	width: 100%;
 	flex-direction: column;
-	gap: 30px;
+	gap: 20px;
 	justify-content: center;
 	padding: 40px;
 	border-radius: 8px;
@@ -23,11 +24,20 @@
 		margin-top: 10px;
 	}
 }
+.sprite{
+	padding: 20px;
+	border: 2px solid #ccc;
+	background-color:#222222;
+	border-radius: 4px;
+	align-self: center;
+	
+}
 .sprite img {
 	transform: scale(1.2);
+	max-width: 180px;
 }
 .description {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: "Roboto Mono", monospace;
 	font-weight: 400;
 	color: #f1f1f1;
@@ -58,7 +68,7 @@
 
 .abilities {
 	text-align: left;
-	margin-top: 5px;
+	margin-top: 0px;
 }
 .abilities_container {
 	display: flex;
@@ -109,7 +119,8 @@
 		align-items: center;
 		gap: 20px;
 		.name {
-			text-align: right;
+			text-align: left;
+			font-weight: bold;
 		}
 	}
 
@@ -138,10 +149,27 @@
 	}
 }
 
+.sprite-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	.icon{
+		cursor: pointer;
+
+		svg.shiny-active{
+			filter: brightness(0) saturate(100%) invert(85%) sepia(96%) saturate(700%) hue-rotate(316deg) brightness(110%) contrast(102%);
+		}
+	}
+}
+
+
 .box_container {
-	display: grid;
-	grid-template-columns: 1fr auto;
-	gap: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 
 // TYPE COLORS

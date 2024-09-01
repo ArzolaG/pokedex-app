@@ -14,9 +14,12 @@ $white: #fff;
 .card-container {
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 .list-container {
+	width: 100%;
 	min-width: 300px;
+	max-width: 400px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -28,10 +31,16 @@ $white: #fff;
 	padding-left: 10px;
 
 	div {
-		border: 2px solid $gray;
+		border: 3px solid $gray;
 		padding: 12px;
 		border-radius: 8px;
 		direction: ltr;
+
+		&.active, &.active:hover{
+			border: 3px solid rgb(235, 50, 50);
+			color: #fff;
+		}
+
 
 		&:hover {
 			color: $white;
