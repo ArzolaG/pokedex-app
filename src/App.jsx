@@ -48,7 +48,7 @@ function App() {
                                 className={poke.name === activePokemon ? "active" : ""}
                             >
                                 <p>
-                                    {formatIndex} {poke.name}
+                                    <span className="pokemon-id">{formatIndex}</span> {poke.name}
                                 </p>
                             </div>
                         );

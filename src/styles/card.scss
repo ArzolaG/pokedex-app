@@ -87,6 +87,7 @@
 .measurements {
 	display: flex;
 	gap: 40px;
+	flex-wrap: wrap;
 
 	span,
 	div {
@@ -246,6 +247,18 @@
 	}
 	.description{
 		min-width: 300px;
+	}
+
+}
+
+@media screen and (max-width:660px){
+	.description{
+		min-width: min-content;
+	}
+}
+@media screen and (max-width:500px){
+	.measurements{
+		gap: 10px;
 	}
 
 }

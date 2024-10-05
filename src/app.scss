@@ -31,7 +31,7 @@ $white: #fff;
 	padding-left: 10px;
 
 	div {
-		border: 3px solid $gray;
+		border: 2px solid $gray;
 		padding: 12px;
 		border-radius: 8px;
 		direction: ltr;
@@ -76,6 +76,10 @@ $white: #fff;
 	}
 	.list-container{
 		min-width: max-content;
+		width: 30%;
+	}
+	.card-container{
+		width: 70%;
 	}
 	.list-container div{
 		padding: 10px;
@@ -92,5 +96,12 @@ $white: #fff;
 	.main_title{
 		font-size: 24px;
 	}
-	
+	.pokemon-id{
+		display: none;
+	}
+}
+@media screen and (max-width:400px){
+	.list-container div p{
+		font-size: 9px;
+	}
 }
