@@ -2,7 +2,7 @@
 
 This is a **Pokedex App** built using **React** and **SCSS** that consumes the [PokeAPI](https://pokeapi.co/). The app allows users to view detailed information about Pokémon such as abilities, stats, types, and much more. The app is fully responsive and designed to offer a sleek and modern user experience.
 
-![Screenshot of Pokédex App](./public/screenshot.png)
+![Screenshot of Pokédex App](./public/assets/screenshot.png)
 
 ## Features
 
